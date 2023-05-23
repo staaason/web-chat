@@ -1,0 +1,196 @@
+.settings__leftSidebar {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 100%;
+    background-color: #2f3136;
+}
+
+.settings__header {
+    padding: 16px;
+    background-color: #2f3136;
+}
+
+.settings__rightHeader{
+    padding-left: 16px;
+    padding-top: 20px;
+    background-color: #36393f;
+}
+
+.settings__rightHeader > h2{
+  color: white;
+}
+
+.settings__header > h2 {
+    padding-top: 30px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.settings__content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.settings__leftSidebar {
+    width: 100%;
+    margin: 16px 0;
+    
+}
+
+.settings__leftSidebar h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.setting__options {
+    display: flex;
+    flex-direction: column
+}
+
+
+.settings-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+  
+  .settings-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+  }
+
+  .settings__rightSidebar{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    background-color: #36393f;
+  }
+
+
+  .settings__rightHeader > h2{
+    padding-top: 40px;
+    font-size: smaller;
+  }
+
+  .settings__rightHeader > h3{
+    font-size: smaller;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .settings__content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .settings__rightContent {
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.setting > h3{
+    margin-top: 19px;
+}
+
+.setting >h3:hover {
+    background-color: #eee;
+    border: 1px solid #eee;
+  }
+
+.settings__contentProfile{
+    padding-top: 10px;
+    padding-right : 20px;
+    flex-direction: column;
+    display: flex;
+
+}
+
+.settings_contentProfileTop{
+    background-color: rgba(77, 66, 77, 200);
+    height: 90px;
+    width: 800px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+.settings_contentProfileBottom{
+    background-color: rgba(32, 34, 37, 144);
+    width: auto;
+    height: auto;
+    border-radius:  0px 0px 10px 10px;
+  
+}
+
+
+
+
+.settings_contentProfileBottomTopInfo{
+  padding-top: 10px;
+  padding-left : 20px;
+  display: flex;
+  justify-content: flex-start;
+ 
+}
+
+.settings_contentProfileBottomTopInfo > h2{
+  font-size: medium;
+  margin-left: 30px;
+  margin-top: 5px;
+  color: white;
+}
+
+
+.settings_contentProfileBottomInfo{
+  flex-direction: column;
+  height: 150px;
+  width: 90%;
+  background-color: #36393f;
+  margin-left: 35px;
+  margin-top: 20px;
+  border-radius:  10px 10px 10px 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.settings_contentProfileBottomInfo> h2{
+  font-size: small;
+  margin-left: 30px;
+  margin-top: 7px;
+  color: white;
+}
+
+.settings_contentProfileBottomInfo > h1{
+  font-size: medium;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+.setting_buttonChangeImage{
+  position: absolute;
+  right: -200px;
+  top: 5px;
+  max-height: 30px;
+}
+

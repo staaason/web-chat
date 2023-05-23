@@ -1,0 +1,125 @@
+.chat {
+    display: flex;
+    flex-direction: column;
+    flex: 0.85;
+    background-color: #363a3f;
+    max-height: 100vh;
+    min-height: 100vh;
+    position: relative;
+}
+
+.chat__input {
+    color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    border-top: 1px solid gray;
+    background-color: #474b53;
+
+
+}
+
+.chat__input.clicked {
+    color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    border-top: 1px solid gray;
+    background-color: #474b53;
+    width: calc(100% - 350px);
+
+}
+
+
+.chat__input>form>input {
+    padding: 15px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline-width: 0;
+    color: white;
+    font-size: large;
+}
+
+.chat__input>form {
+    flex: 1;
+}
+
+.chat__inputButton {
+    display: none;
+}
+
+.chat__inputIcons>.MuiSvgIcon-root {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.chat__inputIcons>.MuiSvgIcon-root:hover {
+    color: white;
+}
+
+.chat__messages {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.chat__messages::-webkit-scrollbar {
+    display: none;
+}
+
+
+.chat__messages.clicked {
+    flex: 1;
+    overflow-y: auto;
+    width: calc(100% - 300px);
+}
+
+.chat__messages.clicked::-webkit-scrollbar {
+    display: none;
+}
+
+.chat__emojiPicker {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 10px;
+    bottom: 110px;
+    z-index: 99999;
+}
+
+
+
+.highlighted {
+    background-color: rgb(57, 59, 71);
+    ;
+    animation-name: highlight;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes highlight {
+    0% {
+        background-color: rgb(57, 59, 71);
+    }
+
+    100% {
+        background-color:  rgb(57, 59, 90);;
+    }
+}
+
+.chat__emojiPicker.clicked {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 10px;
+    margin-right: 300px;
+    bottom: 110px;
+    z-index: 99999;
+
+}

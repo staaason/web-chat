@@ -1,0 +1,115 @@
+.message {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    position: relative;
+  }
+  
+  .message:hover {
+    background-color: rgba(50, 53, 59, 147);
+  }
+  
+  .message__info {
+    margin-left: 20px;
+  }
+  
+  .message__timestamp {
+    color: gray;
+    margin-left: 20px;
+    font-size: x-small;
+    align-items: center;
+  }
+  
+  .message__actions {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -20px; 
+    right: 20px;
+    background-color: rgb(54, 57,63);
+    border: 0.5px solid rgb(54, 57,63);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    z-index: 999;
+    display: none; 
+  }
+  
+  .message:hover .message__actions {
+    display: block; 
+  }
+
+ .message__actions > .MuiSvgIcon-root{
+    margin: 0 5px;
+    width: 20px;
+    height: 20px;
+    color: rgb(185, 187, 190);
+ }
+
+ .message__actions > .MuiSvgIcon-root:hover{
+    cursor: pointer;
+ }
+
+
+ .message__deleteForm{
+  position: absolute;
+  z-index: 9999;
+  border-radius: 5px;
+  height: 200px;
+  width: 300px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 360px;
+  padding: 20px;
+  text-align: center;
+  color: black;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.message__ReactionListBox{
+  display: inline-block;
+  margin-right: 5px;
+  padding: 3px 8px;
+  border-radius: 10px;
+  border: 1px solid rgb(70, 78, 156);
+  background-color: rgb(55, 58, 84);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.message__ReactionListBox:hover{
+  background-color: #d9d9d9;
+}
+
+.message__ReactionListBox > span{
+  font-size: medium;
+  color:rgb(222, 224,252)
+}
+
+.message__emojiPicker{
+  position: fixed;
+  top: 50%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.message__emojiPicker.clicked{
+  position: fixed;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+
+}
+
+ 

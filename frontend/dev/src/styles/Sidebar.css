@@ -1,0 +1,168 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    flex: 0.15;
+    height : 100vh;
+    background-color: #2f3135;
+}
+
+.app{
+    display: flex;
+}
+
+body{
+    overflow-y: hidden;
+}
+
+.sidebar__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2f3135;
+    color: white;
+    border-bottom: 3px solid #26282c;
+
+}
+
+.sidebar__channels{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: calc(100vh - 100px); 
+    overflow-y: auto; 
+    position: relative; 
+}
+
+.sidebar__channels::-webkit-scrollbar {
+    display: none;
+}
+
+
+.sidebar__addChannel{
+    cursor: pointer;
+}
+
+.sidebar__addChannel:hover{
+    color: white;
+}
+
+.sidebar__channelsList{
+    height: 100%;
+}
+
+.sidebar__channelsHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #2f3135;
+    color:gray;
+    position: sticky; /* set a sticky position */
+    top: 0; /* stick to the top of the div */
+    z-index: 1; /* set a higher z-index than the scrollable div */
+
+}
+
+.sidebar__header{
+    display: flex;
+    align-items: center;
+}
+
+.sidebar__profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    background-color: #2f3135;
+    padding: 10px;
+    border-top: 1px solid gray;
+    position: sticky; /* set a sticky position */
+    bottom: 0; /* stick to the bottom of the div */
+    z-index: 1; /* set a higher z-index than the scrollable div */
+
+}
+
+.sidebar__profileInfo{
+    flex: 1;
+    padding: 10px;
+
+}
+
+.sidebar__profileInfo > h3{
+  color: white;
+  font-size: smaller;
+    
+}
+
+
+
+.sidebar__mainText > h3{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.sidebar__mainText > h4{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    word-wrap: break-word;
+    text-align: center;
+    font-size: smaller;
+    color: gray;
+
+}
+
+
+
+.sidebar__formInput{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.sidebar__formInput > h4{
+    padding: 10px;
+    text-align: left;
+    color:rgba(90, 90, 90);
+    font-size: medium;
+
+
+}
+
+.sidebar__formToggle{
+    color: #aaa;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding-top: 3px;
+    font-size: 16px;
+    width: 25px;
+    height: 25px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.sidebar__formToggle :hover{
+    color: gray;
+}
+
+.sidebar__showProfileSettings :hover{
+    color: white;
+}
+.sidebar__showProfileSettings{
+    cursor: pointer;
+}
+
+.sidebar__joinChannel{
+    cursor: pointer;
+}
+
+.sidebar__joinChannel :hover{
+    color: white;
+    
+}

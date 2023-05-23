@@ -1,0 +1,37 @@
+.lobby{
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    flex: 0.85;
+    background-color: #363a3f;
+    max-height: 100vh;
+    min-height: 100vh;
+    position: relative;
+    
+}
+
+
+.lobby::-webkit-scrollbar{
+    display: none;
+}
+.blog-layout {
+    display: flex;
+    flex-wrap: wrap;
+    columns: 2;
+    column-gap: 20px;
+  }
+  
+  .blog-card {
+    margin-bottom: 20px;
+    break-inside: avoid;
+  }
+
+
+  .blog-layout-container {
+
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+  }
